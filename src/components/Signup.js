@@ -89,7 +89,7 @@ const Signup = () => {
           <div className="form-outline mb-3">
           {/* <label className="form-label" htmlFor="form3Example4">Password-: </label> */}
             <input type="password" id="form3Example4" className="form-control form-control-lg"
-              placeholder="Enter a valid password"  value={credentials.password} onChange={onChange} name="password" />
+              placeholder="Enter a valid password"  value={credentials.password} onChange={onChange} name="password" minLength={5} required />
             
           </div>
          
