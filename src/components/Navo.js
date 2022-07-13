@@ -26,17 +26,12 @@ function Navo() {
                     Home
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/about">
-                    About
-                  </Link>
-                </li>
               
                 
               </ul>
               <form className="d-flex" role="search">
-              <Link className="btn btn-primary mx-1" to="/login" role="button">Login</Link>
-              <Link className="btn btn-primary mx-1" to="/signup" role="button">signup</Link>
+              <Link className="btn btn-primary mx-1" to="/" role="button">Login</Link>
+              <Link className="btn btn-primary mx-1" to="/Signup" role="button">signup</Link>
       
               </form>
             </div>

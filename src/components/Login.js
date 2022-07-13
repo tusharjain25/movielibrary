@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
+import Navo from './Navo'
 
 
 const Login = () => {
@@ -20,7 +21,7 @@ const Login = () => {
         if (json.success){
             // Save the auth token and redirect
             localStorage.setItem('token', json.authtoken); 
-            navigate("/");
+            navigate("/Home");
           
 
 
@@ -35,6 +36,8 @@ const Login = () => {
     }
 
     return (
+        <>
+        <Navo/>
         <div>
             <form  onSubmit={handleSubmit}>
                 <div className="mb-3">
@@ -50,6 +53,7 @@ const Login = () => {
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form>
         </div>
+        </>
     )
 }
 

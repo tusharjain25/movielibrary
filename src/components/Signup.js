@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
+import Navo from './Navo'
 
 const Signup = () => {
     const [credentials, setCredentials] = useState({name: "",email: "", password: ""}) 
@@ -20,7 +21,7 @@ const Signup = () => {
         if (json.success){
             // Save the auth token and redirect
             localStorage.setItem('token', json.authtoken); 
-            navigate("/");
+            navigate("/Home");
            
 
         }
@@ -34,6 +35,8 @@ const Signup = () => {
     }
 
     return (
+        <>
+        <Navo/>
         <div className="container">
             <form  onSubmit={handleSubmit}>
             <div className="mb-3">
@@ -54,6 +57,7 @@ const Signup = () => {
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form>
         </div>
+        </>
     )
 }
 

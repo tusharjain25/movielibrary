@@ -5,7 +5,6 @@ function Home() {
   return (
     <div style={{backgroundColor:"darkolivegreen"}}>
       <Navbar/>
-      
     </div>
   )
 }
