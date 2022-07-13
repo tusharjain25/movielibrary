@@ -6,13 +6,13 @@ function Navo() {
     return (
         <nav className="navbar navbar-expand-lg bg-dark sticky-top">
           <div className="container-fluid" >
-          <a className="navbar-brand" href="/" >
+          <a className="navbar-brand " href="/" >
             <img
               src={logo}
               alt=""
               width="35"
               height="30"
-              className="d-inline-block align-text-top"
+              className="d-inline-block align-text-top mx-2"
               
             />
             MovieLibrary
@@ -35,8 +35,6 @@ function Navo() {
                     Home
                   </Link>
                 </li>
-              
-                
               </ul>
               <form className="d-flex" role="search">
               <Link className="btn btn-dark mx-1" to="/" role="button">Login</Link>

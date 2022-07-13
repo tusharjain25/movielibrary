@@ -97,7 +97,7 @@ const Login = () => {
                 Remember me
               </label>
             </div>
-            <Link to="#!" className="text-body">Forgot password?</Link>
+            
           </div>
 
           <div className="text-center text-lg-start mt-4 pt-2">
