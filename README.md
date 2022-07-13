@@ -1,5 +1,43 @@
 # Getting Started with Create React App
 
+instructions
+
+1- first you have to create account using signup
+2-then you have to login 
+3-then you see a search button 
+4-search any movie of your choice
+4-add to your playlist
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
