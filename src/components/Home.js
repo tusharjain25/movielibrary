@@ -41,10 +41,11 @@ function Home(props) {
         
       <div className="container my-3">
         <div className="row">
-          {movie.map((value, _id) => {
+          {movie.map((value, index) => {
             return (
-              <div className="col-3">
-                <div className="card" style={{ width: "18rem" }}>
+              
+              <div className="d-flex col-3">
+                <div className="card" style={{ width: "18rem" }} key={index}>
                   <img
                     src={value.Poster}
                     className="card-img-top"
@@ -53,14 +54,15 @@ function Home(props) {
                     alt="..."
                   />
                   <div className="card-body">
-                    <h3 className="card-title">{value.Title}</h3>
-                    <h5 className="card-text">{value.Year}</h5>
+                    <h3 className="card-title" >{value.Title}</h3>
+                    <h5 className="card-text" >{value.Year}</h5>
                     <a href="/" className="btn btn-primary">
                       Add to Playlist
                     </a>
                   </div>
                 </div>
               </div>
+              
             );
           })}
         </div>
